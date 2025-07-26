@@ -1,0 +1,394 @@
+.home-header {
+  display: none;
+}
+
+.opc-midds {
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  z-index: 9999;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+header .logo {
+  margin-top: 2.5rem;
+  position: fixed;
+}
+header .logo a {
+  display: flex;
+}
+header .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+header .logo p {
+  color: #382404;
+  font-weight: 600;
+  margin: 8px 0 0 15px;
+  font-size: 1.1rem;
+}
+header .logo small {
+  display: block;
+  color: #454545;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+header .social-nav {
+  position: fixed;
+  margin-top: 3.5rem;
+  right: 20%;
+  z-index: 1000;
+}
+header .social-nav ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .social-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #000000;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+header .social-nav a:hover, header .social-nav a:focus {
+  color: #158107;
+  outline: none;
+  transform: scale(1.1);
+}
+
+main {
+  z-index: 999;
+  position: relative;
+  margin: 200px 0 350px;
+  width: 100%;
+  padding-bottom: 30px;
+  background: #f2f9db;
+  box-shadow: 0 3px 19px -5px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.describe {
+  width: 97%;
+}
+.describe blockquote {
+  font-size: 4rem;
+  margin: 0 0 20px;
+  font-weight: 400;
+  color: #151515;
+  line-height: 4.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.describe blockquote i {
+  color: rgb(71, 189, 11);
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Instrument Serif", serif;
+}
+.describe p {
+  font-size: 1.1rem;
+  line-height: 1.8em;
+  font-weight: 400;
+  margin-bottom: 35px;
+  color: #555;
+  width: 90%;
+}
+.describe a {
+  color: #382404;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: all 600ms ease;
+  padding: 7px 16px;
+  border-radius: 13px;
+}
+.describe a:hover, .describe a:focus {
+  color: #fff;
+  background: rgb(71, 189, 11);
+}
+.describe a i {
+  transform: rotate(10deg);
+  margin-right: 4px;
+}
+
+.projects {
+  width: 100%;
+  margin: 100px 0 50px;
+}
+.projects .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.projects .owl-nav span {
+  color: #000;
+  padding: 10px 15px;
+  font-size: 3rem;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.projects .owl-nav span:hover {
+  background: #999;
+}
+.projects h1 {
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 600;
+  margin: 50px 0 20px;
+  text-transform: uppercase;
+}
+.projects h1:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  float: left;
+  background: #454545;
+  margin-right: 15px;
+  margin-top: 16px;
+}
+.projects span {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+}
+.projects .item {
+  margin: 0 10px 0 0;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+.projects .item figure {
+  width: 100%;
+  display: flex;
+  margin: 0 0 15px;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 10px;
+}
+.projects .item figure figcaption {
+  position: absolute;
+  bottom: 10px;
+  background: #000;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  pointer-events: auto;
+  padding: 8px;
+  color: #fff;
+  width: 86%;
+  border-radius: 10px;
+  left: 7%;
+}
+.projects .item figure figcaption i {
+  float: right;
+  margin: 5px 0 0;
+  color: #fff;
+}
+.projects .item figure img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  min-width: 100%;
+}
+.projects .item:nth-child(odd) figure img {
+  animation: slideLeft 60s linear infinite;
+}
+.projects .item:nth-child(even) figure img {
+  animation: slideRight 60s linear infinite;
+}
+.projects h3 {
+  font-size: 1rem;
+  margin: 0 0 5px;
+  padding: 0 15px;
+  font-weight: 400;
+}
+.projects p {
+  font-size: 0.8rem;
+  margin: 0 0 20px;
+  padding: 0 15px;
+  line-height: 20px;
+  color: #454545;
+}
+.projects a {
+  font-size: 0.9rem;
+  margin: 0 14px 10px;
+  padding: 3px 12px;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+  color: #353535;
+  border-radius: 15px;
+}
+.projects a i {
+  color: #555;
+}
+
+.testimonials {
+  border-top: 1px solid #e4edc5;
+  padding: 30px 0 30px;
+}
+.testimonials h1 {
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 600;
+  margin: 50px 0 50px;
+  text-transform: uppercase;
+}
+.testimonials h1:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  float: left;
+  background: #454545;
+  margin-right: 15px;
+  margin-top: 16px;
+}
+.testimonials p {
+  font-size: 1.6rem;
+  margin: 0 0 40px;
+  line-height: 2.6rem;
+  color: #101010;
+  width: 87%;
+  transition: all 300ms ease;
+}
+.testimonials p:hover {
+  color: rgb(50, 104, 23);
+}
+.testimonials img {
+  width: 70px !important;
+  border-radius: 50%;
+}
+.testimonials figure {
+  display: flex;
+}
+.testimonials figcaption {
+  margin: 10px 0 0 15px;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.testimonials figcaption small {
+  display: block;
+  color: #454545;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -999;
+  color: #000;
+  text-align: center;
+  padding: 100px 0 20px;
+}
+footer h1 {
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+footer span {
+  font-size: 3.5rem;
+  margin: 0 0 50px;
+  display: block;
+  font-family: "Instrument Serif", serif;
+  transition: all 300ms ease;
+}
+footer span:hover {
+  color: rgb(71, 189, 11);
+}
+footer p {
+  font-size: 0.9em;
+  color: #888;
+  font-weight: 300;
+}
+
+.owl-dots {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  header .container {
+    width: 90%;
+  }
+  .container {
+    width: 90%;
+  }
+  .describe blockquote {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+  }
+  .projects {
+    margin: 75px 0 50px;
+  }
+  .projects .item figure {
+    height: 355px;
+  }
+  .projects h1 {
+    font-size: 1.3em;
+  }
+  .testimonials {
+    padding-top: 0;
+  }
+  .testimonials h1 {
+    margin: 30px 0 35px;
+    font-size: 1.3em;
+  }
+  .testimonials p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 0 auto 40px;
+    line-height: 2rem;
+  }
+  footer span {
+    font-size: 2.3rem;
+  }
+  footer h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0 0 50px;
+  }
+  footer small {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=template.css.map */
