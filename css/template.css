@@ -337,7 +337,7 @@ footer span:hover {
 }
 footer p {
   font-size: 0.9em;
-  color: #888;
+  color: #434242;
   font-weight: 300;
 }
 
@@ -354,6 +354,7 @@ footer p {
   }
   header .logo p {
     margin: 8px 0 0 20px;
+    font-size: 1.2rem;
   }
   header .logo img {
     width: 100px;
@@ -361,14 +362,17 @@ footer p {
   }
   header .social-nav {
     margin-top: 5rem;
-    right: 22%;
+    right: 31%;
   }
   .container {
     width: 90%;
   }
+  .describe {
+    width: 100%;
+  }
   .describe blockquote {
     font-size: 2.5rem;
-    line-height: 3.2rem;
+    line-height: 3rem;
   }
   .projects {
     margin: 75px 0 50px;
@@ -388,7 +392,7 @@ footer p {
   }
   .testimonials p {
     font-size: 1.2rem;
-    width: 90%;
+    width: 95%;
     margin: 0 auto 40px;
     line-height: 2rem;
   }
